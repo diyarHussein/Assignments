@@ -1,0 +1,258 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 25px;
+    text-transform: uppercase;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Pictuers/background-pic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#top-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px ;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-list{
+    list-style: none;
+    margin-left: 25px;
+}
+
+#point{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu-logo{
+    width: 15px;
+    height: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  
+}
+
+
+
+#sec1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px 0px;
+    text-align: center;
+    margin-bottom: -7px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#title{
+    font-size: 80px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+#description{
+    text-transform: lowercase;
+    width: 35%;
+    margin-bottom: 25px;
+}
+
+#start-btn{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-btn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    width: 220px;
+    font-weight: bold;
+}
+
+#start-btn a:nth-child(2):hover{
+    background-color: white;
+    color: black;
+}
+
+#sec2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    
+    
+}
+
+#card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#sec2-title{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+
+.card-title{
+    font-size: 40px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 40px;
+    margin-left: 30px;
+}
+
+.card-content{
+    
+    text-transform: lowercase;
+}
+
+.card-btn{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    width: 220px;
+    font-weight: bold;
+}
+
+.card-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#footer{
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+#bottom-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 25px ;
+    font-weight: bold;
+}
+
+#footer-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.photo{
+    width: 29px;
+    height: 29px;
+    margin-left: 25px;
+}
+
+#copy{
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 415px){
+    #menu{
+        display: none;
+    }
+    #start-btn{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 20vh;
+    }
+    #card-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #bottom-nav{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #logo{
+        font-size: 20px;
+    }
+    #title{
+        font-size: 41px;
+        width: 80%;
+    }
+    #description{
+        font-size: 18px;
+        width: 70%;
+    }
+    #sec2-title{
+        font-size: 35px;
+    }
+    .card-info{
+        flex-direction: column;
+        margin: 0px 20px 20px 20px;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+    .card-content{
+        font-size: 18px;
+    }
+    .card-btn{
+        font-size: 21px;
+    }
+    #copy{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .photo{
+        margin-left: 70px;
+    }
+    #point{
+        visibility:visible;
+        top: -96%;
+        right: 0%;
+        bottom: 0%;
+        cursor: pointer;
+    }
+}
